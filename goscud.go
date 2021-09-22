@@ -1,7 +1,6 @@
 package main
 
 import (
-	"database/sql"
 	"flag"
 	"fmt"
 	"io"
@@ -9,6 +8,7 @@ import (
 	"os"
 	"time"
 
+	"github.com/Jarover/goscud/database"
 	"github.com/Jarover/goscud/models"
 	"github.com/Jarover/goscud/readconfig"
 	"github.com/Jarover/goscud/utils"
@@ -26,6 +26,25 @@ func readFlag(configFlag *readconfig.Flag) {
 	flag.StringVar(&configFlag.Host, "h", readconfig.GetEnv("HOST", ""), "host")
 	flag.UintVar(&configFlag.Port, "p", uint(readconfig.GetEnvInt("PORT", 0)), "port")
 	flag.Parse()
+}
+
+func readEVN(lastId, limit uint) uint {
+
+	rows, err := database.GetDB().Query("SELECT FIRST ? ID,DT,DVS,USR FROM FB_EVN WHERE USR>0 AND ID > ?", limit, lastId)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for rows.Next() {
+		ns := new(models.FbEnv)
+		err = rows.Scan(&ns.ID, &ns.DT, &ns.DVS, &ns.USR)
+		if err != nil {
+			log.Fatal(err)
+		}
+		fmt.Println(ns)
+		lastId = ns.ID
+	}
+	return lastId
 }
 
 func main() {
@@ -59,33 +78,16 @@ func main() {
 		log.Fatal(err)
 	}
 
-	DbaUrl := Config.User + ":" + Config.Pass + "@" + Config.Host + "/" + Config.Db
-
-	conn, _ := sql.Open("firebirdsql", DbaUrl)
-	log.Println(DbaUrl)
-	//conn, _ := sql.Open("firebirdsql", "SYSDBA:masterkey@skud-serv/skud")
-	defer conn.Close()
+	database.InitDB(Config.Host, Config.Db, Config.User, Config.Pass)
+	defer database.GetDB().Close()
 
 	lastId, err := utils.ReadState(readconfig.GetBaseFile() + "_config.json")
 	if err != nil {
 		log.Println("Not Config file")
 	}
 	log.Printf("Start ID is %d", lastId)
+	readEVN(lastId, Config.Limit)
 
-	rows, err := conn.Query("SELECT FIRST ? ID,DT FROM FB_EVN WHERE ID > ?", Config.Limit, lastId)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	for rows.Next() {
-		ns := new(models.FbEnv)
-		err = rows.Scan(&ns.ID, &ns.DT)
-		if err != nil {
-			log.Fatal(err)
-		}
-		fmt.Println(ns)
-		lastId = ns.ID
-	}
 	utils.SaveState(readconfig.GetBaseFile()+"_config.json", lastId)
 	duration("Время работы программы", start)
 }

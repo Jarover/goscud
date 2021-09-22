@@ -76,3 +76,32 @@ commit: b0d234e, build time: 20210922_11:38:33, release: 0.1.19
 2021/09/22 11:38:52 Read state ID: 10
 2021/09/22 11:38:52 Start ID is 10
 2021/09/22 11:38:52 Время работы программы: 53.2511ms
+2021/09/22 13:54:11 Starting quicklog program...
+commit: 846d622, build time: 20210922_13:54:06, release: 0.1.20
+2021/09/22 13:54:11 SYSDBA:masterkey@skud-serv/skud
+2021/09/22 13:54:11 Read state ID: 20
+2021/09/22 13:54:11 Start ID is 20
+2021/09/22 13:54:11 Время работы программы: 73.864ms
+2021/09/22 13:58:17 Starting quicklog program...
+commit: 846d622, build time: 20210922_13:58:15, release: 0.1.21
+2021/09/22 13:58:17 SYSDBA:masterkey@skud-serv/skud
+2021/09/22 13:58:17 Read state ID: 30
+2021/09/22 13:58:17 Start ID is 30
+2021/09/22 13:58:17 sql: Scan error on column index 3, name "USR": converting NULL to int is unsupported
+2021/09/22 13:58:34 Starting quicklog program...
+commit: 846d622, build time: 20210922_13:58:15, release: 0.1.21
+2021/09/22 13:58:34 SYSDBA:masterkey@skud-serv/skud
+2021/09/22 13:58:34 Read state ID: 30
+2021/09/22 13:58:34 Start ID is 30
+2021/09/22 13:58:34 sql: Scan error on column index 3, name "USR": converting NULL to int is unsupported
+2021/09/22 15:59:41 Starting quicklog program...
+commit: 846d622, build time: 20210922_15:59:38, release: 0.1.22
+2021/09/22 15:59:41 SYSDBA:masterkey@skud-serv/skud
+2021/09/22 15:59:41 Read state ID: 30
+2021/09/22 15:59:41 Start ID is 30
+2021/09/22 15:59:41 Время работы программы: 56.7569ms
+2021/09/22 16:12:26 Starting quicklog program...
+commit: 846d622, build time: 20210922_16:12:23, release: 0.1.23
+2021/09/22 16:12:26 Read state ID: 77
+2021/09/22 16:12:26 Start ID is 77
+2021/09/22 16:12:26 Время работы программы: 53.6035ms
