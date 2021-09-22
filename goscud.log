@@ -1,0 +1,78 @@
+2021/09/17 17:49:35 Время работы программы: 1.4695535s
+2021/09/17 18:06:13 Starting quicklog program...
+commit: b0d234e, build time: 20210917_18:06:09, release: 0.0.5
+2021/09/17 18:06:15 Время работы программы: 2.0798591s
+2021/09/17 18:09:41 Starting quicklog program...
+commit: b0d234e, build time: 20210917_18:07:57, release: 0.0.6
+2021/09/17 18:09:41 :@/skud
+2021/09/17 18:09:43 Время работы программы: 2.0603668s
+2021/09/17 18:15:23 Starting quicklog program...
+commit: b0d234e, build time: 20210917_18:07:57, release: 0.0.6
+2021/09/17 18:15:23 SYSDBA:masterkey@skud-serv/skud
+2021/09/17 18:15:24 Время работы программы: 1.444611s
+2021/09/20 18:07:25 Starting quicklog program...
+commit: b0d234e, build time: 20210920_18:07:17, release: 0.0.7
+2021/09/20 18:07:25 SYSDBA:masterkey@skud-serv/skud
+2021/09/20 18:07:27 Время работы программы: 1.4469024s
+2021/09/20 18:12:41 Starting quicklog program...
+commit: b0d234e, build time: 20210920_18:12:39, release: 0.0.8
+2021/09/20 18:12:42 SYSDBA:masterkey@skud-serv/skud
+2021/09/20 18:12:43 Время работы программы: 1.3250565s
+2021/09/20 18:21:09 Starting quicklog program...
+commit: b0d234e, build time: 20210920_18:21:06, release: 0.0.9
+2021/09/20 18:21:09 SYSDBA:masterkey@skud-serv/skud
+2021/09/20 18:21:11 sql: expected 2 destination arguments in Scan, not 1
+2021/09/20 18:28:25 Starting quicklog program...
+commit: b0d234e, build time: 20210920_18:28:14, release: 0.0.10
+2021/09/20 18:28:25 SYSDBA:masterkey@skud-serv/skud
+2021/09/20 18:28:27 Время работы программы: 1.4268985s
+2021/09/22 11:06:32 Starting quicklog program...
+commit: b0d234e, build time: 20210922_11:06:28, release: 0.0.12
+2021/09/22 11:06:32 SYSDBA:masterkey@skud-serv/skud
+2021/09/22 11:06:35 Время работы программы: 3.0167091s
+2021/09/22 11:09:15 Starting quicklog program...
+commit: b0d234e, build time: 20210922_11:09:12, release: 0.0.13
+2021/09/22 11:09:15 SYSDBA:masterkey@skud-serv/skud
+2021/09/22 11:09:17 Время работы программы: 1.4143182s
+2021/09/22 11:15:54 Starting quicklog program...
+commit: b0d234e, build time: 20210922_11:15:49, release: 0.0.15
+2021/09/22 11:15:54 SYSDBA:masterkey@skud-serv/skud
+2021/09/22 11:15:54 unexpected end of JSON input
+2021/09/22 11:19:17 Starting quicklog program...
+commit: b0d234e, build time: 20210922_11:19:14, release: 0.0.16
+2021/09/22 11:19:17 SYSDBA:masterkey@skud-serv/skud
+2021/09/22 11:19:17 unexpected end of JSON input
+2021/09/22 11:19:49 Starting quicklog program...
+commit: b0d234e, build time: 20210922_11:19:46, release: 0.0.17
+2021/09/22 11:19:49 SYSDBA:masterkey@skud-serv/skud
+2021/09/22 11:19:49 unexpected end of JSON input
+2021/09/22 11:19:49 Last ID is 0
+2021/09/22 11:19:49 Время работы программы: 55.2374ms
+2021/09/22 11:20:01 Starting quicklog program...
+commit: b0d234e, build time: 20210922_11:19:46, release: 0.0.17
+2021/09/22 11:20:01 SYSDBA:masterkey@skud-serv/skud
+2021/09/22 11:20:01 Read state ID: 0
+2021/09/22 11:20:01 Время работы программы: 48.4408ms
+2021/09/22 11:21:46 Starting quicklog program...
+commit: b0d234e, build time: 20210922_11:19:46, release: 0.0.17
+2021/09/22 11:21:46 SYSDBA:masterkey@skud-serv/skud
+2021/09/22 11:21:46 Read state ID: 0
+2021/09/22 11:21:46 Время работы программы: 52.2121ms
+2021/09/22 11:21:55 Starting quicklog program...
+commit: b0d234e, build time: 20210922_11:21:51, release: 0.0.18
+2021/09/22 11:21:55 SYSDBA:masterkey@skud-serv/skud
+2021/09/22 11:21:55 Read state ID: 0
+2021/09/22 11:21:55 Start ID is 0
+2021/09/22 11:21:55 Время работы программы: 54.4721ms
+2021/09/22 11:38:36 Starting quicklog program...
+commit: b0d234e, build time: 20210922_11:38:33, release: 0.1.19
+2021/09/22 11:38:36 SYSDBA:masterkey@skud-serv/skud
+2021/09/22 11:38:36 Read state ID: 0
+2021/09/22 11:38:36 Start ID is 0
+2021/09/22 11:38:36 Время работы программы: 56.7634ms
+2021/09/22 11:38:52 Starting quicklog program...
+commit: b0d234e, build time: 20210922_11:38:33, release: 0.1.19
+2021/09/22 11:38:52 SYSDBA:masterkey@skud-serv/skud
+2021/09/22 11:38:52 Read state ID: 10
+2021/09/22 11:38:52 Start ID is 10
+2021/09/22 11:38:52 Время работы программы: 53.2511ms

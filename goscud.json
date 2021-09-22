@@ -1,4 +1,9 @@
 {
     "port": 3050,
-    "server": "skud-serv"
+    "dbhost": "skud-serv",
+    "db": "skud",
+    "dbuser" : "SYSDBA",
+    "dbpass" : "masterkey",
+    "limit" : 10
+
 }
